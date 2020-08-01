@@ -69,6 +69,32 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# 以下全てをGemfile下部にコピー
 group :production do
-  gem 'unicorn', '5.4.1'
+  gem 'unicorn'
 end
+
+# フロント関連
+gem 'haml-rails'
+gem 'font-awesome-sass'
+gem 'jquery-rails'
+
+# 画像関連
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog-aws'
+
+# ログイン機能
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+
+# カテゴリ機能
+gem 'ancestry'
+
+# クレジット情報
+gem 'payjp'
+
+# javascriptで環境変数を参照
+gem 'gon'
+gem 'dotenv-rails'
