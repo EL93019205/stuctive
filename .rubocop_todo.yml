@@ -10,7 +10,7 @@
 # Cop supports --auto-correct.
 Layout/CommentIndentation:
   Exclude:
-    - 'config/environments/production.rb'
+#    - 'config/environments/production.rb'
 
 # Offense count: 6
 # Cop supports --auto-correct.
