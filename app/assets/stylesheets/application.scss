@@ -1,0 +1,10 @@
+@import "reset";
+@import "article/index_header";
+@import "article/index_top";
+@import "article/index_carousel";
+@import "article/index_content";
+@import "article/index_footer";
+
+* {
+  box-sizing: border-box;
+}
