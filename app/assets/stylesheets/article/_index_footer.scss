@@ -1,0 +1,47 @@
+.index{
+  &__footer{
+    background-color: #666;
+    &__container{
+      padding: 32px 40px;
+      &__top{
+        &__area1{
+          padding-right: 12px;
+          width: 50%;
+          &__box{
+            &__title{
+              padding: 16px 3.2px;
+              margin-bottom: 12px;
+              &--text{
+                color: #CACACA;
+                font-size: 16px;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+              }
+            }
+            &__tags{
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              &__tag{
+                color: #f7f7f7;
+                padding: 1.2px 6px;
+                margin: 0 4.8px 4.8px 0;
+                font-size: 12px;
+                background-color: rgba(35,35,35,0.5);
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                line-height: 1.5;
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+        &__area2{
+
+        }
+        &__area3{
+
+        }
+      }
+    }
+  }
+}
