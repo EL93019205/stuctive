@@ -1,0 +1,168 @@
+$carousel_auto_time: 30s;
+.index{
+  &__carousel{
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 225px;
+    padding: 0 2%;
+    padding-bottom:25px;
+    &__draw{
+      width:100%;
+      height:200px;
+      &__visible{
+        width:100%;
+        height:170px;
+        overflow: hidden;
+        position:relative;
+        &__slider{
+          width:4180px;
+          height:170px;
+          display:flex;
+          position:absolute;
+          left: 0;
+//          animation: carousel_auto $carousel_auto_time infinite;
+//          animation-play-state: running;
+          animation-delay: 0s;
+          &__card{
+            width: 220px;
+            height: 170px;
+            &__link{
+              width: 220px;
+              height: 170px;
+              text-decoration: none;
+              &__eyecatch{
+                width: 220px;
+                height: 140px;
+                position:relative;
+                &__img{
+                  position:absolute;
+                  left:0px;
+                  width: 220px;
+                  height: 140px;
+                  padding: 6px;
+                }
+                &__label{
+                  position:absolute;
+                  right:0px;
+                  width: 70px;
+                  height: 15px;
+                  right:6px;
+                  top:6px;
+                  background-color: #FCEE21;
+                  font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                  font-size: 10px;
+                  text-align: center;
+                  opacity: 0.9;
+                  line-height:15px;
+                  font-weight: bold;
+                  color: #444444;
+                }
+              }
+              &__description{
+                width: 220px;
+                height: 30px;
+                line-height: 1.0;
+                font-size:12.36px;
+                padding:3px 6px;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                color: #545863;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+//        &__slider:hover{
+//          animation-play-state: paused;
+//        }
+      }
+      &__dots{
+        width:100%;
+        height:30px;
+        justify-content: center;
+        display: flex;
+        &__dot{
+          &--button{
+            font-size:6px;
+            text-align:center;
+            line-height:10px;
+            border: 0;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            color: black;
+            background: #f7f7f7;
+            opacity:.25;
+            cursor: pointer;
+            outline:none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes carousel_auto {
+  0%{
+    transform: translateX(0px);
+  }
+  5%{
+    transform: translateX(0px);
+  }
+  11%{
+    transform: translateX(-220px);
+  }
+  16%{
+    transform: translateX(-220px);
+  }
+  22%{
+    transform: translateX(-440px);
+  }
+  27%{
+    transform: translateX(-440px);
+  }
+  33%{
+    transform: translateX(-660px);
+  }
+  38%{
+    transform: translateX(-660px);
+  }
+  44%{
+    transform: translateX(-880px);
+  }
+  50%{
+    transform: translateX(-880px);
+  }
+  55%{
+    transform: translateX(-1100px);
+  }
+  61%{
+    transform: translateX(-1100px);
+  }
+  66%{
+    transform: translateX(-1320px);
+  }
+  72%{
+    transform: translateX(-1320px);
+  }
+  77%{
+    transform: translateX(-1540px);
+  }
+  83%{
+    transform: translateX(-1540px);
+  }
+  88%{
+    transform: translateX(-1760px);
+  }
+  94%{
+    transform: translateX(-1760px);
+  }
+  100%{
+    transform: translateX(-1980px);
+  }
+}
+
+@keyframes test {
+  100%{
+    transform: translateX(0px);
+  }
+}
