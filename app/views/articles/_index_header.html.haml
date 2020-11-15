@@ -1,0 +1,40 @@
+.index__header
+  .index__header__logo-container
+    = link_to root_path, class: "index__header__logo-container__logo" do
+      = image_tag asset_path("logolongS.png"), class: "index__header__logo-container__logo--img"
+  = link_to root_path, class: "index__header__search-container" do
+    .fas.fa-search.index__header__search-container--img
+    .index__header__search-container--text
+      search
+  .index__header__menu
+    .index__header__menu__box
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          新規投稿
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          Post
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          投稿一覧
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          List
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          下書き一覧
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          Draft
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          クイズ
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          Quiz
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          メモ
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          Memo
+      .index__header__menu__box__list
+        = link_to root_path, class: "index__header__menu__box__list__link" do
+          マイページ
+        = link_to root_path, class: "index__header__menu__box__list__text" do
+          Mypage

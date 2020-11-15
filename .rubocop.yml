@@ -29,3 +29,5 @@ AllCops:
   #'frozen_string_literal: true'を無効
   Style/FrozenStringLiteralComment:
     Enabled: false
+Documentation:
+  Enabled: false

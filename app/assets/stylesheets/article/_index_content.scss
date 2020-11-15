@@ -1,0 +1,240 @@
+.index{
+  &__content{
+    width: 100%;
+    display:flex;
+    padding: 25px;
+    &__left{
+//      background-color:red;
+      width: 70%;
+      padding-right: 10px;
+      &__widget{
+        font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        color: #3e3e3e;
+        font-size: 14px;
+        margin-bottom: 25px;
+        &__link{
+          &--img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      &__list{
+        width: 100%;
+        &__article{
+          width: 100%;
+          height: 230px;
+          padding: 25px 10px;
+          border-top: 1px dotted rgba(0, 0, 0, .2);;
+          &:last-child{
+            border-bottom: 1px dotted rgba(0, 0, 0, .2);;
+          }
+          &__link{
+            width: 100%;
+            height: 230px;
+            text-decoration: none;
+            display: flex;
+            &__eyecatch{
+              width: 42%;
+              height: 100%;
+              max-width: 320px;
+              max-height: 180px;
+              position:relative;
+              &--img{
+                position:absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 150px;
+              }
+              &--label{
+                position:absolute;
+                top: 0px;
+                right: 0px;
+                height: 16px;
+                background-color: #fcce21;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                font-size: 10px;
+                padding: 1px 5px;
+                color: #444;
+              }
+            }
+            &__entry{
+              width: 58%;
+              padding-left:18px;
+              &__title{
+                font-size:21px;
+                color:#444;
+                margin-bottom:6px;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+              }
+              &__day{
+                color:#666;
+                font-size:11px;
+                margin-bottom: 4px;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+              }
+              &__text{
+                color:#666;
+                font-size:13px;
+                margin-bottom: 4px;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__right{
+      width: 30%;
+      &__widget{
+        width: 100%;
+        margin-bottom: 50px;
+        &__link{
+          width: 100%;
+          &--img{
+            width: 100%;
+          }
+        }
+      }
+      &__search{
+        margin-bottom: 50px;
+        position: relative;
+        height: 54px;
+        &__box{
+          position: absolute;
+          width:100%;
+          padding: 12px 1%;
+          border: 3px solid rgba(51, 51, 51, 0.1);
+          border-radius: 1px;
+        }
+        &__button{
+          position: absolute;
+          right: 3px;
+          border: 0;
+          background: none;
+          line-height:10px;
+          padding: 22px 10px;
+          font-size: 1.1em;
+          height: 100%;
+          color: #333;
+        }
+      }
+      &__recently-image{
+        width: 100%;
+        margin-bottom: 50px;
+        &__title{
+          background-color: #1bb4d3;
+          color: #fff;
+          font-size: 14px;
+          font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+          padding: 12px;
+          border-radius: 3px;
+        }
+        &__container{
+          &__list{
+            padding: 1em 1.2em 1em 0.3em;
+            border-bottom: 1px solid rgba(125, 125, 125, 0.2);
+            &__link{
+              text-decoration: none;
+              display:flex;
+              &__eyecatch{
+                width: 30%;
+                max-width: 100px;
+                margin-bottom: 0.5em;
+                margin-right: 0.5em;
+                &--img{
+                  border: 0;
+                  vertical-align: bottom;
+                  max-width: 100%;
+                  height: auto;
+                }
+              }
+              &__box{
+                &__text{
+                  font-size: 0.9em;
+                  opacity: .5;
+                  color:#666;
+                  font-family: 'Concert One', cursive;
+                  font-weight: normal;
+                }
+                &__date{
+                  display:block;
+                  font-size: 0.9em;
+                  opacity: .5;
+                  color:#666;
+                  font-family: 'Concert One', cursive;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__recently-text{
+        width: 100%;
+        margin-bottom: 50px;
+        &__title{
+          background-color: #1bb4d3;
+          color: #fff;
+          font-size: 14px;
+          font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+          padding: 12px;
+          border-radius: 3px;
+        }
+        &__container{
+          &__list{
+            padding: 1em 1.2em 1em 0.3em;
+            border-bottom: 1px solid rgba(125, 125, 125, 0.2);
+            &__link{
+              text-decoration: none;
+              &__text{
+                color: #666;
+                font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                font-size: 15px;
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+      &__tag{
+        width: 100%;
+        margin-bottom: 50px;
+        &__title{
+          background-color: #1bb4d3;
+          color: #fff;
+          font-size: 14px;
+          font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+          padding: 12px;
+          border-radius: 3px;
+        }
+      }
+      &__archive{
+        width: 100%;
+        margin-bottom: 50px;
+        &__title{
+          background-color: #1bb4d3;
+          color: #fff;
+          font-size: 14px;
+          font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+          padding: 12px;
+          border-radius: 3px;
+        }
+      }
+      &__category{
+        width: 100%;
+        margin-bottom: 50px;
+        &__title{
+          background-color: #1bb4d3;
+          color: #fff;
+          font-size: 14px;
+          font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+          padding: 12px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
